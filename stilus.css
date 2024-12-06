@@ -1,0 +1,129 @@
+body{
+    background-image: url(kepek/hatter.jpg);
+    display: grid;
+    
+}
+
+header{
+    background-image: url(kepek/fejlec.jpg);
+    height: 100px;
+    padding: 1%;
+    text-align: center;
+    color: white; 
+}
+nav ul{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 150px ;
+}
+nav ul li{
+    display: grid;
+    border: 1px solid rgb(73, 130, 238);
+    border-radius: 10px;
+    background-color: rgb(73, 130, 238);
+    padding: 1px;
+    text-align: center;
+    
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 3fr;
+    gap: 10px;
+    background-color: white;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    grid-template-areas: 
+    "h h h"
+    "n a as"
+    "f f f"
+    ;
+    
+}
+header{
+    grid-area: h;
+}
+nav{
+    grid-area: n;
+}
+article{
+    padding: 30px;
+    text-align: center;
+    grid-area: a;
+}
+aside{
+    grid-area: as;
+    padding: 10px;
+}
+footer{
+    grid-area: f;
+}
+
+footer{
+    background-color: rgb(73, 130, 238);
+    height: 50px;
+    text-align: center;
+    padding: 1%;
+    
+}
+.Felsokepek img{
+    border-radius: 10px;
+    border: 1px solid grey;
+    max-width: 200px;
+    padding: 10px;
+    box-shadow: 5px 10px #cab9b9;
+    margin: 10px;
+}
+
+.Felsokepek{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 30px;
+    
+}
+.Alsokepek img{
+    border-radius: 10px;
+    border: 1px solid grey;
+    max-width: 200px;
+    display: grid;
+    padding: 10px;
+    box-shadow: 5px 10px #cab9b9;
+    margin: 10px;
+    
+}
+.Alsokepek{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    
+}
+
+aside{
+    border: 1px solid grey;
+    border-radius: 10px;
+    gap: 30px;
+}
+
+
+@media screen and (max-width:600px){
+    nav ul{
+        grid-template-columns: 1fr;
+    }
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "h"
+            "n"
+            "a"
+            "as"
+            "f"
+        ;
+    }
+}
